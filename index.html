@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Maryem — Professeure d'anglais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">Maryem — English Teacher</div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème" title="Basculer thème">🌙</button>
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Cours</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero container">
+      <div class="hero-left">
+        <h1>Bonjour, je suis Maryem Barkawi</h1>
+        <p>Professeure d'anglais certifiée — cours particuliers, préparation aux examens et conversation vivante.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Réserver un cours</a>
+          <a class="btn outline" href="#services">Voir les cours</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="avatar" aria-hidden="true">M</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>À propos de Maryem</h2>
+      <p>Je m'appelle Maryem. J'enseigne l'anglais depuis plus de 6 ans aux élèves, étudiants et adultes. J'utilise des méthodes actives, des jeux de rôle et des ressources modernes pour rendre l'apprentissage motivant et efficace.</p>
+      <ul class="meta-list">
+        <li>Diplôme : TEFL / CELTA</li>
+        <li>Expérience : 6+ ans</li>
+        <li>Modalités : En ligne & présentiel</li>
+      </ul>
+    </section>
+
+    <section id="services" class="card">
+      <h2>Mes cours</h2>
+      <div class="grid">
+        <article class="service">
+          <h3>Conversation & Prononciation</h3>
+          <p>Sessions interactives pour améliorer la fluidité et la confiance à l'oral.</p>
+        </article>
+        <article class="service">
+          <h3>Préparation aux examens</h3>
+          <p>TOEFL, IELTS, Cambridge — stratégies, pratique et correction ciblée.</p>
+        </article>
+        <article class="service">
+          <h3>Cours pour enfants</h3>
+          <p>Activités ludiques et supports visuels pour un apprentissage durable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="card">
+      <h2>Témoignages</h2>
+      <blockquote>
+        <p>"Maryem a transformé ma confiance en anglais. Ses cours sont clairs et intéressants." — Aicha</p>
+      </blockquote>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact & Réservation</h2>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Dites-moi quel type de cours vous intéresse..." required></textarea>
+
+        <label for="when">Préférence horaire</label>
+        <input type="text" id="when" name="when" placeholder="Ex : Lundi après-midi" />
+
+        <button type="submit" class="btn primary">Envoyer</button>
+        <div id="formMessage" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Maryem — Professeure d'anglais. <a href="#contact">Contactez-moi</a></p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
